@@ -1,0 +1,13 @@
+<!--pages/play/play.wxml-->
+<view class='play' wx:for="{{playlist}}">
+  <view>
+    <image src='{{item.image}}' style='width: 200rpx; height: 200rpx; background-color: red;'></image>
+  </view>
+  <view class='play-2'>
+    <view>
+      <view>{{item.name}}</view>
+      <view>价格：{{item.price}}</view>
+    </view>
+    <view>{{item.introduction}}</view>
+  </view>
+</view>

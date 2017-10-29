@@ -1,0 +1,29 @@
+<!--CXindex.wxml-->
+<!--等级功能模版 shart-->
+<template name="actList">
+  <view class='CXindex-act'>
+    <view class='CXindex-Lift'>活动：{{id}}</view>
+    <view class='CXindex-right'>剩余时间：{{time}}</view>
+  </view>
+</template>
+<!--登记功能模版 end-->
+<scroll-view scroll-x="false" scroll-y="false">
+  <view class="CXindex-titl">
+    <view class="CXindex-Lift">
+      <view>会 员</view>
+      <view>准会员</view>
+      <view>转化率</view>
+    </view>
+    <view class="CXindex-right">
+      <view>金 币</view>
+      <view>影响力</view>
+      <view>魅惑力</view>
+    </view>
+  </view>
+  <block wx:for="{{actListjs}}" wx:for-index="idx" wx:for-item="itemname">
+    <view class='CXindex-act'>
+      <view class='CXindex-Lift'>活动：{{itemname.id}}</view>
+      <view class='CXindex-right'>剩余时间：{{itemname.time}}</view>
+    </view>
+  </block>
+</scroll-view>

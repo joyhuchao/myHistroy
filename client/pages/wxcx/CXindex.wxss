@@ -1,0 +1,29 @@
+/**index.wxss**/
+
+.CXindex-titl{
+  width: 100%;
+  height: 400rpx;
+  background: url('https://mmbiz.qpic.cn/mmbiz/TA8NjLtQB1OpNhP3HHuZr8XQhAXZexezJKrCziagJBPTopcGcCJFyiaa8mXBIvpNIMgW7cNjcB9EVdicMfuCarfMw/0?wx_fmt=jpeg') no-repeat;
+  background-size: 100% 100%;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.CXindex-act{
+  width: 100%;
+  height: 90rpx;
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.CXindex-lift{
+  flxe: 1;
+}
+
+.CXindex-right{
+  flxe: 2;
+  float: right;
+}

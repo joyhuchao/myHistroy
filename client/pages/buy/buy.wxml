@@ -1,0 +1,15 @@
+<!--pages/buy/buy.wxml-->
+<view class='buy'>
+  <image class='image' src='{{item.image}}' style='width: 300rpx; height: 300rpx'>
+  </image>
+  <view class='inputView' style='margin-top:10%'>
+    <input class='input' bindinput='bindKeyInput' focus='true' placeholder='请输入购买数量' placeholder-style='color:red' type="number" confirm-type='done' maxlength='4'>
+    </input>
+  </view>
+  <view class='text'>
+  <view> 花费{{item.price}} * {{BuyNum * 1}}金币</view>
+  <view> 剩余 {{OwnGold}} 金币</view>
+  </view>
+  <button class='button-buy' form-type='submit' type='primary' disable="{{OwnGold >= (price * BuyNum) ? 'true' : 'false'}}"> 购买</button>
+  <button class='button-buy' form-type='reset' type='warn'> 取消</button>
+</view>

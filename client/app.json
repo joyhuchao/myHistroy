@@ -1,0 +1,29 @@
+{
+    "pages": [
+        "pages/wxcx/CXindex",
+        "pages/shop/shop",
+        "pages/play/play",
+        "pages/explain/explain",
+        "pages/buy/buy",
+        "pages/index/index",
+        "pages/chat/chat"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#333",
+        "navigationBarTitleText": "强国之路",
+        "navigationBarTextStyle": "white"
+    },
+    "tabBar":{
+      "color": "#101010",
+      "selectedColor": "#000000",
+      "list":[{
+        "pagePath":"pages/wxcx/CXindex",
+        "text":"游戏大厅"  
+      },
+      {
+        
+      }
+      ]
+    }
+}
